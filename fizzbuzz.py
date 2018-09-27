@@ -45,17 +45,19 @@ Fizz
 Buzz
 """
 
-num = int(input('How many numbers shall we print "Fizz"? '))
-multiples = int(input('For numbers of what multiple shall we print "Buzz"? '))
+listLength = int(input("How many numbers shall we print? "))
+fizzMult = int(input("For multiples of what number shall we print 'Fizz'? "))
+buzzMult = int(input("For multiples of what number shall we print 'Buzz'? "))
 
-for num in range(1, 21):
-    if num % 3 == 0 and num % 5 == 0:
-        print('FizzBuzz')
-    elif num % 3 == 0:
-        print('Fizz')
-    elif num % 5 == 0:
-        print('Buzz')
+for i in range(1, listLength+1):
+    if (i % fizzMult == 0 and i % buzzMult == 0):
+        print ("FizzBuzz")
+    elif i % fizzMult == 0:
+        print ("Fizz")
+    elif i % buzzMult == 0:
+        print ("Buzz")
+    
     else:
-        print(num)
-
-
+        print (i)
+        
+        
